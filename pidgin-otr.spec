@@ -1,16 +1,15 @@
 Summary:	Off-The-Record Messaging plugin for pidgin
 Name:		pidgin-otr
 Version:	3.2.0
-Release:	1
+Release:	2
 Source0:	http://otr.cypherpunks.ca/%{name}-%{version}.tar.gz
 License:	GPL
 Group:		Applications/Networking
 URL:		http://otr.cypherpunks.ca/
-BuildRequires:	glib2-devel
 BuildRequires:	libgcrypt-devel >= 1.2.0
 BuildRequires:	libgpg-error-devel
-BuildRequires:	pidgin-devel >= 2.0.0
 BuildRequires:	libotr-devel >= 3.1.0
+BuildRequires:	pidgin-devel >= 2.0.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
