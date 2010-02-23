@@ -3,6 +3,7 @@ Name:		pidgin-otr
 Version:	3.2.0
 Release:	2
 Source0:	http://otr.cypherpunks.ca/%{name}-%{version}.tar.gz
+# Source0-md5:	8af70b654b7d7c5a5b7785699ff562f9
 License:	GPL
 Group:		Applications/Networking
 URL:		http://otr.cypherpunks.ca/
