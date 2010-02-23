@@ -7,10 +7,13 @@ Source0:	http://otr.cypherpunks.ca/%{name}-%{version}.tar.gz
 License:	GPL
 Group:		Applications/Networking
 URL:		http://otr.cypherpunks.ca/
+BuildRequires:	gettext-devel
 BuildRequires:	libgcrypt-devel >= 1.2.0
 BuildRequires:	libgpg-error-devel
 BuildRequires:	libotr-devel >= 3.1.0
+BuildRequires:	perl-XML-Parser
 BuildRequires:	pidgin-devel >= 2.0.0
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
