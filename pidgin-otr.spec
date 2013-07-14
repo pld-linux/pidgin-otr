@@ -1,7 +1,7 @@
 Summary:	Off-The-Record Messaging plugin for pidgin
 Name:		pidgin-otr
 Version:	4.0.0
-Release:	1
+Release:	2
 Source0:	http://otr.cypherpunks.ca/%{name}-%{version}.tar.gz
 # Source0-md5:	eadb953376acc474e56041d4c12aa2c8
 License:	GPL
@@ -35,7 +35,9 @@ rm -rf $RPM_BUILD_ROOT
 	 DESTDIR=$RPM_BUILD_ROOT
 
 # libtool insists on creating this
-rm $RPM_BUILD_ROOT%{_libdir}/pidgin/pidgin-otr.la
+%{__rm} $RPM_BUILD_ROOT%{_libdir}/pidgin/pidgin-otr.la
+
+%{__rm} -r $RPM_BUILD_ROOT%{_datadir}/locale/my_MM
 
 %find_lang %{name}
 
